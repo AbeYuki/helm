@@ -45,7 +45,7 @@ image:
 
 service:
   ui:
-    type: ClusterIP
+    type: LoadBalancer
     nodePort: null
   manager:
     type: ClusterIP
@@ -71,7 +71,7 @@ persistence:
     expectedChecksum: ~
 
 csi:
-  kubeletRootDir: "/var/snap/microk8s/common/var/lib/kubelet"
+  kubeletRootDir: "/var/lib/kubelet/"
   attacherReplicaCount: ~
   provisionerReplicaCount: ~
   resizerReplicaCount: ~

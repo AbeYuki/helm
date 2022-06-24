@@ -67,7 +67,7 @@ persistence:
     expectedChecksum: ~
 
 csi:
-  kubeletRootDir: "/var/snap/microk8s/common/var/lib/kubelet"
+  kubeletRootDir: "/var/lib/kubelet/"
   attacherReplicaCount: ~
   provisionerReplicaCount: ~
   resizerReplicaCount: ~
@@ -76,7 +76,7 @@ csi:
 defaultSettings:
   backupTarget: "nfs://192.168.1.3:/"
   backupTargetCredentialSecret: ~
-  allowRecurringJobWhileVolumeDetached: ~
+  allowRecurringJobWhileVolumeDetached: true
   createDefaultDiskLabeledNodes: ~
   defaultDataPath: ~
   defaultDataLocality: ~
