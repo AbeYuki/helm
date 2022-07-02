@@ -90,7 +90,7 @@ defaultSettings:
   storageMinimalAvailablePercentage: ~
   upgradeChecker: ~
   defaultReplicaCount: ~
-  defaultLonghornStaticStorageClass: ~
+  defaultLonghornStaticStorageClass: "longhorn"
   backupstorePollInterval: ~
   taintToleration: ~
   systemManagedComponentsNodeSelector: ~
