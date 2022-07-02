@@ -15,7 +15,7 @@ helm repo add [NAME] [URL] [flags]
 helm repo add longhorn https://charts.longhorn.io
 ```
 ```
-helm repo add metallb metallb/metallb
+helm repo add metallb https://metallb.github.io/metallb
 ```
 ```
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
