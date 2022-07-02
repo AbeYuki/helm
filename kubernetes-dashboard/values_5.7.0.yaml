@@ -139,7 +139,7 @@ resources:
 protocolHttp: false
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   # Dashboard service port
   externalPort: 443
 
