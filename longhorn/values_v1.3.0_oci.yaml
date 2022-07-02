@@ -46,7 +46,7 @@ image:
 service:
   ui:
     type: NodePort
-    nodePort: null
+    nodePort: 32766
   manager:
     type: ClusterIP
     nodePort: ""
