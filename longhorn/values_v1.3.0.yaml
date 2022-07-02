@@ -46,7 +46,7 @@ image:
 service:
   ui:
     type: LoadBalancer
-    nodePort: null
+    nodePort: "30000"
   manager:
     type: ClusterIP
     nodePort: ""
