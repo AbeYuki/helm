@@ -56,8 +56,9 @@ helm install ingress-nginx ingress-nginx/ingress-nginx \
   --values values.yaml
 ```
 ```
-helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard \
+helm install k8s-dashboard k8s-dashboard/kubernetes-dashboard \
   --version 5.7.0 \
+  --namespace kube-system \
   --values values_5.7.0.yaml
 ```
 

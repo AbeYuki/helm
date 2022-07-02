@@ -46,7 +46,7 @@ image:
 service:
   ui:
     type: NodePort
-    nodePort: null
+    nodePort: 32766
   manager:
     type: ClusterIP
     nodePort: ""
@@ -78,7 +78,7 @@ csi:
   snapshotterReplicaCount: ~
 
 defaultSettings:
-  backupTarget: ~
+  backupTarget: "nfs://10.0.0.110:/"
   backupTargetCredentialSecret: ~
   allowRecurringJobWhileVolumeDetached: ~
   createDefaultDiskLabeledNodes: ~
