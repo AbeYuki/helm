@@ -12,6 +12,9 @@ helm repo add gitlab https://charts.gitlab.io
 helm repo add longhorn https://charts.longhorn.io
 ```
 ```
+helm repo add matic-insurance https://matic-insurance.github.io/helm-charts
+```
+```
 helm repo add metallb https://metallb.github.io/metallb
 ```
 ```
@@ -89,6 +92,13 @@ helm install k8s-dashboard k8s-dashboard/kubernetes-dashboard \
 helm install prometheus prometheus-community/prometheus \
   --version 15.10.2 \
   --namespace prometheus \
+  --create-namespace \
+  --values values.yaml
+```
+```
+helm install circleci-runner matic-insurance/circleci-runner \
+  --version 0.1.1 \
+  --namespace circleci \
   --create-namespace \
   --values values.yaml
 ```
