@@ -108,6 +108,11 @@ helm install circleci-runner matic-insurance/circleci-runner \
 helm show values prometheus-community/prometheus --version 15.10.2 > values.yaml
 ```
 
+## helm list 
+```
+helm list -A
+```
+
 ## Unintall
 ```
 helm uninstall longhorn -n longhorn-system
