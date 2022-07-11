@@ -121,7 +121,7 @@ helm uninstall longhorn -n longhorn-system
 helm uninstall metallb -n metallb-system
 ```
 ```
-helm uninstall kubernetes-dashboard
+helm uninstall kubernetes-dashboard -n <namespace>
 ```
 
 ## Upgrade
