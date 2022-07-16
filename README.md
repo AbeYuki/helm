@@ -21,7 +21,7 @@ helm repo add metallb https://metallb.github.io/metallb
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 ```
 ```
-helm repo add k8s-dashboard https://kubernetes.github.io/dashboard
+helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
 ```
 ```
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
@@ -83,7 +83,7 @@ helm install ingress-nginx ingress-nginx/ingress-nginx \
   --values values.yaml
 ```
 ```
-helm install k8s-dashboard k8s-dashboard/kubernetes-dashboard \
+helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard \
   --version 5.7.0 \
   --namespace kube-system \
   --values values_5.7.0.yaml
